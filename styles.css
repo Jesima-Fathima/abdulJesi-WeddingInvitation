@@ -1,25 +1,26 @@
-/* Colorful gradient background */
-.background-gradient {
+/* Blurred full-screen floral background */
+.background-blur {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg,
-    #ff9a9e 0%, #fad0c4 50%,
-    #fad0c4 51%, #ff9a9e 100%);
+  inset: 0;
+  background: url('assets/flowerscape.jpg') center/cover no-repeat;
+  filter: blur(8px) brightness(0.7);
   z-index: -2;
 }
 
-/* Semi-transparent overlay for text contrast */
-.overlay {
+/* Decorative flower image frames */
+.flower-frame {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  pointer-events: none;
+  opacity: 0.9;
   z-index: -1;
+}
+.flower-frame.top { top: 0; }
+.flower-frame.bottom {
+  bottom: 0;
+  transform: translateX(-50%) rotate(180deg);
 }
 
 body {
@@ -33,10 +34,10 @@ body {
 .container {
   max-width: 700px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
 }
 
 .bismillah {
@@ -44,17 +45,20 @@ body {
   font-size: 2.8rem;
   margin: 0;
   color: #ffeaa7;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .names {
   font-size: 1.9rem;
   margin: 15px 0 30px;
   color: #ff7675;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .verse blockquote {
   font-style: italic;
   line-height: 1.6;
+  color: #f0f0f0;
 }
 
 .verse cite {
