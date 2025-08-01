@@ -1,22 +1,24 @@
-/* Full-screen background image */
-.background {
+/* Colorful gradient background */
+.background-gradient {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('assets/background.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg,
+    #ff9a9e 0%, #fad0c4 50%,
+    #fad0c4 51%, #ff9a9e 100%);
   z-index: -2;
 }
 
-/* Semi-transparent dark overlay for readability */
+/* Semi-transparent overlay for text contrast */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
@@ -31,35 +33,35 @@ body {
 .container {
   max-width: 700px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
 }
 
 .bismillah {
   font-family: 'Scheherazade', serif;
   font-size: 2.8rem;
   margin: 0;
-  color: #f9e79f;
+  color: #ffeaa7;
 }
 
 .names {
   font-size: 1.9rem;
   margin: 15px 0 30px;
-  color: #fad7a0;
+  color: #ff7675;
 }
 
 .verse blockquote {
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .verse cite {
   display: block;
   margin-top: 10px;
   font-size: 0.9rem;
-  color: #d5d8dc;
+  color: #dfe6e9;
 }
 
 .details {
@@ -78,7 +80,7 @@ body {
 .details h3 {
   margin-bottom: 5px;
   font-size: 1.2rem;
-  color: #fad7a0;
+  color: #ffeaa7;
 }
 
 .details p {
@@ -91,7 +93,7 @@ body {
 
 .map h3 {
   margin-bottom: 15px;
-  color: #fad7a0;
+  color: #ffeaa7;
 }
 
 footer p {
