@@ -2,25 +2,9 @@
 .background-blur {
   position: fixed;
   inset: 0;
-  background: url('assets/flowerscape.jpg') center/cover no-repeat;
-  filter: blur(8px) brightness(0.7);
+  background: url('assets/15967283_Watercolor_pink_floral_wreath_with_golden_circle.svg') center/cover no-repeat;
+  filter: blur(6px) brightness(0.7);
   z-index: -2;
-}
-
-/* Decorative flower image frames */
-.flower-frame {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  pointer-events: none;
-  opacity: 0.9;
-  z-index: -1;
-}
-.flower-frame.top { top: 0; }
-.flower-frame.bottom {
-  bottom: 0;
-  transform: translateX(-50%) rotate(180deg);
 }
 
 body {
@@ -34,38 +18,42 @@ body {
 .container {
   max-width: 700px;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
 }
 
 .bismillah {
   font-family: 'Scheherazade', serif;
   font-size: 2.8rem;
   margin: 0;
-  color: #ffeaa7;
+  color: #ffa5d7;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .names {
-  font-size: 1.9rem;
+  font-size: 4rem;
   margin: 15px 0 30px;
-  color: #ff7675;
+  color: #41deec;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  font-family: 'Brush Script MT', cursive;
 }
 
 .verse blockquote {
   font-style: italic;
   line-height: 1.6;
-  color: #f0f0f0;
+  color: #fef6ee;
+  font-style: oblique;
+  font-family: cursive;
+  font-size: 1.2rem;
 }
 
 .verse cite {
   display: block;
   margin-top: 10px;
-  font-size: 0.9rem;
-  color: #dfe6e9;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-style: oblique;
+  font-family: cursive;
 }
 
 .details {
@@ -83,12 +71,17 @@ body {
 
 .details h3 {
   margin-bottom: 5px;
-  font-size: 1.2rem;
-  color: #ffeaa7;
+  font-size: 1.6rem;
+  color: #a069f3;
+  font-style: oblique;
+  font-family: cursive;
 }
 
 .details p {
-  font-size: 1rem;
+  font-size: 1.7rem;
+  font-style: oblique;
+  font-family: cursive;
+  color: #ebfc09;
 }
 
 .map {
@@ -97,11 +90,16 @@ body {
 
 .map h3 {
   margin-bottom: 15px;
-  color: #ffeaa7;
+  color: #a069f3;
+  font-style: oblique;
+  font-family: cursive;
+  font-size: 1.6rem;
 }
 
 footer p {
   font-style: italic;
   margin-top: 25px;
-  font-size: 1rem;
+  font-size: 2rem;
+  font-family: cursive;
+  color: #ebfc09;
 }
